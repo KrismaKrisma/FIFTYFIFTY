@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        header{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: wheat;
+       
+           
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            border: 2px solid #b04f8b;
+        }
+        .navbar a{
+            float: left;
+            font-size: 18px;
+            color: #b04f8b;
+            padding: 10px 30px;
+            text-decoration: none;
+            text-align: center; 
+            border-bottom: 3px solid transparent;
+            font-family: 'Abril Fatface', cursive;
+           
+
+        }
+
+        .navbar a:hover{
+            color: wheat;
+            border-bottom: 3px solid wheat
+        }
+       
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn{
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: #b04f8b;
+            padding: 15px 30px;
+            background-color: black;
+            font-size: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn{
+            background-color: palevioletred;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #b04f8b;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px palevioletred;
+            z-index: 1;
+
+        }
+        .dropdown-content a{
+            float: none;
+            color: pink;
+            padding: 15px 18px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+            background-color: palevioletred;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+       
+         
+         article{
+            background-color: #b04f8b;
+            color: wheat;
+            padding: 100px;
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Unna', serif;
+           
+            
+
+
+                   
+            
+         }
+         div.gallery{
+            border: 1px solid black;
+            font-size: 15px;
+            font-family: 'Unna', serif;
+            color: antiquewhite;
+            background-color: black;
+           
+            
+         }
+         div.gallery{
+            border: 5px solid black;
+           
+           
+         }
+         div.gallery img{
+            width: 100%;
+            height: auto;
+            border: 10px solid black;
+            
+            
+         }
+         div.desc{
+            padding: 15px;
+            text-align: center;
+         }
+         *{
+            box-sizing: border-box;
+         }
+         .responsive{
+            padding: 0 10px;
+            float: left;
+            width: 24.99999%;
+         }
+         @media only screen and (max-width: 700px){
+            .responsive{
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+         }
+         @media only screen and (max-width: 500px){
+            .responsive{
+                width: 100%;
+            }
+         }
+         .clearfix:after{
+            content: "";
+            display: table;
+            clear: both;
+           
+         }
+
+
+         footer{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            color:white;
+            
+         }
+
+         .gallery h3 {
+            color:wheat;
+            font-size: 30px;
+         }
+
+         @media (max-width: 800px) {
+            desc,header {
+                width: 100%;
+                height: auto;
+            }
+         }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Images/FIFTY30.png" width="25%">
+    </header>
+
+    <div class="navbar">
+        <a href="index.html">HOME</a></li> 
+        <div class="dropdown">
+            <button class="dropbtn">ABOUT</button>
+            <div class="dropdown-content">
+                <a href="about.html">Biographies</a>
+                <a href="pictures.html">Pictures</a>
+            </div>
+        </div>
+        <a href="news.html">NEWS</a></li>
+        <a href="music.html">MUSIC</a></li>
+        <a href="store.html">STORE</a></li>  
+    </div>
+        
+    
+    <article>
+       
+        <h2>BIODATA DAN PROFIL FIFTY FIFTY <br><br><br><br></h2>
+       
+
+
+        <div class="responsive">
+            <div class="gallery">
+                <h3> Aran</h3>
+                <a target="_blank" href="Images/Aran.jpeg">
+                    <img src="Images/Aran.jpeg" alt="cinque terre" width="600" height="400">
+                </a>
+                <div class="desc">Nama Panggung: aran <br>
+                    Nama Kelahiran: Jeong Eunah<br>
+                    Posisi: Vokalis Utama, Rapper Utama, Maknae<br>
+                    Tanggal Lahir: 11 Oktober 2004<br>
+                    Zodiak: Libra<br>
+                    Tinggi: 162 <br>
+                    Berat: 44 <br>
+                    Golongan Darah: O <br>
+                    Tipe MBTI: INTP<br>
+                    Kebangsaan: Perwakilan Korea<br><br>
+
+                    Fakta Tentang Aran:<br><br>
+                    Pendidikan: School of Performing Arts Seoul<br>
+                    (Jurusan Musik Praktis/Putus Sekolah).
+                    Spesialisasi: Vokal & Rap (tinggi-menengah),
+                    Bahasa (tinggi-menengah), Bakat Individu, lucu/Humor 
+                    (CV mereka-Lima Puluh Perusahaan).<br>
+                    Nama Panggilan: Baby Baekgu<br>
+                    Hobi: Melihat-lihat gambar kucing dan gambar makanan.<br>
+                    Beberapa penyanyi favoritnya adalah John K, LOCO, DEAN, dan Crush.
+                    Aran suka coklat mint.
+                    Dia memiliki adik laki-laki
+                    Aran adalah anggota terakhir yang bergabung dengan perusahaan.
+
+
+
+                </div>
+            </div>
+         </div>
+
+         <div class="responsive">
+            <div class="gallery">
+                <h3> Keena</h3>
+                <a target="_blank" href="Images/keenasi.jpeg">
+                    <img src="Images/keenasi.jpeg" alt="northern lights" width="600" height="200">
+
+                </a>
+                <div class="desc"> Nama Panggung: Keena<br>
+                    Nama Kelahiran: Song Jakyung<br>
+                    Posisi: Rapper Utama, Sub-Vokalis<br>
+                    Tanggal Lahir: 9 Juli 2002<br>
+                    Zodiak: Cancer<br>
+                    Tinggi: 164 cm <br>
+                    Berat: 45 kg <br>
+                    Golongan Darah: B <br>
+                    Tipe MBTI: ESFP<br>
+                    Kebangsaan: Perwakilan Korea<br><br>
+
+                    Fakta Tentang Keena<br><br>
+                    Pendidikan: Sekolah Menengah Seni Lila(Departemen Konten Musik Visua)
+                    Dia bersekolah di GB Academy.<br>
+                    Spesialisasi: Rap, Bakat Individu (CV mereka-Lima Puluh Perusahaan).<br>
+                    Makanan favoritnya adalah bibimbap, ceker ayam, tomat, dan shio pan.<br>
+                    Makanan yang dia tidak suka adalah kacang dan ssamjang.<br>
+                    Keena adalah anggota paling keras di grup. Keena berlatih selama 7,5 tahun. dan dia adalah anak tunggal.
+
+
+                </div>
+            </div>
+         </div>
+         <div class="responsive">
+            <div class="gallery">
+                <h3> Sio</h3>
+                <a target="_blank" href="Images/Sio.jpeg">
+                    <img src="Images/Sio.jpeg" alt="forest" width="600" height="400">
+                </a>
+                <div class="desc"> Nama Panggung: Sio <br>
+                    Nama Kelahiran: Jeong Jiho<br>
+                    Posisi: Vokalis Utama, Penari Utama<br>
+                    Tanggal Lahir: 6 Oktober 2004<br>
+                    Zodiak: Libra <br>
+                    Tinggi: 165 cm <br>
+                    Berat: 45 kg <br>
+                    Golongan Darah: AB <br>
+                    Tipe MBTI: INTJ<br>
+                    Kebangsaan: Perwakilan Korea<br><br>
+
+                    Fakta Tentang Sio: <br><br>
+                    Sio lahir di Yeosu, Jeollanam-do<br>
+                    Pendidikan: Sekolah Menengah Seni Informasi Wonkwang (Departemen Musik Sekolah)<br>
+                    Spesialisasi: Vokal, Bakat Individu (CV mereka-Lima Puluh Perusahaan).<br>
+                    Grup favoritnya adalah THORNAPPLE.<br>
+                    Makanan yang paling tidak disukainya adalah terong.<br>
+                    Jika Sio bukan idola, dia ingin menjadi seorang penulis.("WHAT IF" Concept Film) dan dia
+                    menulis di jurnal setiap hari tentang sifat yang paling dia percaya yaitu lio-nya.
+
+                </div>
+            </div>
+         </div>
+
+         <div class="responsive">
+            <div class="gallery">
+                <h3> Saena</h3>
+                <a target="_blank" href="Images/Saena.jpeg">
+                    <img src="Images/Saena.jpeg" alt="mountains" width="600" height="400">
+
+                </a>
+                <div class="desc"> Nama Panggung: Saena<br>
+                    Nama Kelahiran: Jeong Sehyun<br>
+                    Posisi: Pemimpin, Penari Utama, Sub-Rapper <br>
+                    Tanggal Lahir: 12 Maret 2004 <br>
+                    Zodiak: Pisces<br>
+                    Tinggi: 160 cm <br>
+                    Berat: 42 kg <br>
+                    Golongan Darah: B <br>
+                    Tipe MBTI: ISFJ <br>
+                    Kebangsaan: Perwakilan Korea<br><br>
+
+                    Fakta Tentang Saena:<br><br>
+                    Dia lahir di U-dong, Haeundae-gu, Busan.<br>
+                    Pendidikan: Busan Gangdong Elementary School, Haegang Middle School, Haeundae Tourism High School.
+                    Dia lulusan Ged.<br>
+                    Hobi: Memotret, bersih-bersih, dan jalan-jalan.<br>
+                    Spesialisasi: Menari, Lucu/Humor (CV mereka-Fifty Company). Saena berada di dancing high <br>
+                    KBS 2TV sebagai bagian dari Tim Hoya. Dia adalah bagian dari tim tari Horangdoongi dari HO DANCES
+                    STUDIO, di mana dia dijuluki "Kecantikan Dahi" karena dahinya yang cantik.<br>
+                    Saat disekolah menengah, dia adalah bagian dari klub dansa bernama Lunatic.<br>
+                    Sejak dia masih muda, dia telah mengikuti akademik tari untuk jazz dan tari jalanan.<br> 
+                    Penyanyi favoritnya adalah Daniel Caesar. <br>
+                    Saena suka pergi hiking bersama keluarganya di akhir pekan.
+
+                </div>
+            </div>
+         </div>
+         <div class="clearfix"></div>
+        
+  
+    </article>
+    
+    <footer>
+        <p>Copyrightⓒ2023 ATTRAKT Co., Ltd. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

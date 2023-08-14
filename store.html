@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        header{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: wheat;
+       
+           
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            border: 2px solid #b04f8b;
+        }
+        .navbar a{
+            float: left;
+            font-size: 18px;
+            color: #b04f8b;
+            padding: 10px 30px;
+            text-decoration: none;
+            text-align: center; 
+            border-bottom: 3px solid transparent;
+            font-family: 'Abril Fatface', cursive;
+           
+
+        }
+
+        .navbar a:hover{
+            color: wheat;
+            border-bottom: 3px solid wheat
+        }
+       
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn{
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: #b04f8b;
+            padding: 15px 30px;
+            background-color: black;
+            font-size: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn{
+            background-color: palevioletred;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #b04f8b;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px palevioletred;
+            z-index: 1;
+
+        }
+        .dropdown-content a{
+            float: none;
+            color: pink;
+            padding: 15px 18px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+            background-color: palevioletred;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+         
+         article{
+            background-color: #b04f8b;
+            color: wheat;
+            padding: 5px;
+            padding-left: 25px;
+           
+         }
+
+         *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Roboto' sans-serif;
+         }
+
+         .container{
+            width: 100%;
+         }
+
+         .blog-section{
+            width: 85%;
+            margin: 20px auto;
+
+         }
+
+         .cards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap:50px;
+            margin: 25px auto;
+           
+
+         }
+
+         .cards .card{
+            width: 100%;
+            position: relative;
+            
+
+         }
+
+         .image-section img{
+            width: 100%;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 25px;
+           
+         }
+
+         .content{
+            padding: 10px 10px;
+            margin: 0px;
+            border: 2px solid black;
+            text-align: center;
+            background-color: black;
+            background-image: linear-gradient( black, rgb(253, 130, 150));
+
+         }
+
+         .content h4{
+            font-size: 20px;
+            color: aqua;
+            font-weight: 500;
+            color: black;
+            border: 2px solid black;
+            font-weight: bold;
+            background-color: antiquewhite;
+
+         }
+
+         .content p{
+            color: white;
+            font-size: 20px;
+           
+         }
+
+         .content a{
+            text-decoration: none;
+            color:blue ;
+            margin-top: 12px;
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: bisque;
+            
+         }
+
+         @media screen and (max-width: 992px) {
+        .cards{
+            grid-template-columns: repeat(2, 1fr);
+        
+       }
+        
+    }
+
+       @media screen and (max-width: 768px) {
+        .cards{
+            grid-template-columns: 1fr;
+        }
+    }
+
+         
+
+         
+
+         footer{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            color:white;
+            
+         }
+
+         @media (max-width: 800px) {
+            desc,header {
+                width: 100%;
+                height: auto;
+            }
+         }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Images/FIFTY30.png" width="25%">
+    </header>
+
+    <div class="navbar">
+        <a href="index.html">HOME</a></li> 
+        <div class="dropdown">
+            <button class="dropbtn">ABOUT</button>
+            <div class="dropdown-content">
+                <a href="about.html">Biographies</a>
+                <a href="pictures.html">Pictures</a>
+            </div>
+        </div>
+        <a href="news.html">NEWS</a></li>
+        <a href="music.html">MUSIC</a></li>
+        <a href="store.html">STORE</a></li>  
+    </div>
+        
+    <article>
+        
+      <div id="gradient"></div>
+        
+
+   <div class="container">
+        <div class="blog-section">
+
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="Images/albumblack.webp">
+                    </div>
+                    <div class="content">
+                        <h4> [PO] FIFTY FIFTY The 1st Single<br>
+                            Album - The Beginning: Cupid</h4>
+                        <p> Rp 155.000,00</p>
+                        <a href="https://shopee.co.id/product/140243251/17258950539" target="_blank">Shopee</a>
+                       </div>
+                  </div>
+                </div>
+            </div>
+    
+        </div>
+
+        <div class="container">
+        <div class="blog-section">
+
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="Images/albumfifty.webp">
+                    </div>
+                    <div class="content">
+                        <h4>FIFTY FIFTY The Beginning Cupid</h4>
+                        <p> Rp 70.000,00</p>
+                        <a href="https://shopee.co.id/product/84372149/23227273398" target="_blank">Shopee</a>
+
+                    </div>
+                  </div>
+                </div>
+            </div>
+    
+        </div>
+
+        <div class="container">
+            <div class="blog-section">
+    
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="image-section">
+                            <img src="Images/photocard2.webp">
+                        </div>
+                        <div class="content">
+                            <h4>PhotoCard FIFTY FIFTY Selca</h4>
+                            <p> Rp 1.800,00</p>
+                            <a href="https://shopee.co.id/product/182243196/21679291681" target="_blank">Shopee</a>
+    
+                        </div>
+                      </div>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div class="container">
+                <div class="blog-section">
+        
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="image-section">
+                                <img src="Images/photocard.webp">
+                            </div>
+                            <div class="content">
+                                <h4>Fifty Fifty - The Beginning Cupid Album PhotoCard<br>
+                                    (Saena, Keena, Sio, Aran)(Nerd & Black Ver.)</h4>
+                                <p> Rp. 40.000,00</p>
+                                <a href="https://shopee.co.id/product/75223392/21880255543" target="_blank">Shopee</a>
+        
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+            
+                </div>
+
+                <div class="container">
+                    <div class="blog-section">
+            
+                        </div>
+                        <div class="cards">
+                            <div class="card">
+                                <div class="image-section">
+                                    <img src="Images/shopie.webp">
+                                </div>
+                                <div class="content">
+                                    <h4>FIFTY FIFTY The Beginning Cupid</h4>
+                                    <p> Rp. 290.000,00</p>
+                                    <a href="https://shopee.co.id/product/52267441/18578038594" target="_blank">Shopee</a>
+            
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                
+                    </div>
+
+       
+    
+    </article>
+
+
+    <footer>
+        <p>Copyrightⓒ2023 ATTRAKT Co., Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>

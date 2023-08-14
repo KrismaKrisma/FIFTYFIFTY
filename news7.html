@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    
+        header{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: wheat;
+           
+           
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            border: 2px solid #b04f8b;
+    
+        }
+        .navbar a{
+            float: left;
+            font-size: 18px;
+            color: #b04f8b;
+            padding: 10px 30px;
+            text-decoration: none;
+            text-align: center; 
+            border-bottom: 3px solid transparent;
+            font-family: 'Abril Fatface', cursive;
+    
+        }
+    
+        .navbar a:hover{
+            color: wheat;
+            border-bottom: 3px solid wheat
+        }
+       
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn{
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: #b04f8b;
+            padding: 15px 30px;
+            background-color: black;
+            font-size: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn{
+            background-color: palevioletred;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #b04f8b;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px palevioletred;
+            z-index: 1;
+    
+        }
+        .dropdown-content a{
+            float: none;
+            color: pink;
+            padding: 15px 18px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+            background-color: palevioletred;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    
+        #runningtext{
+            width: 100%;
+            height: 100%;
+            padding-top: 7px;
+            margin: 0px 0 0px 0;
+            background-color: black;
+            color: wheat;
+            position: relative;
+            font-size: 20px;
+            border: 2px solid #b04f8b;
+            font-family: 'Unna', serif;
+        }
+        
+    
+        article{
+                background-color: #b04f8b;
+                padding: 80px;
+                text-align: center;
+                font-size: 15px;
+                color: black;
+                font-family: 'Unna', serif;
+               
+               
+                
+        }
+    
+        .isipostingall{
+            background-color: #b04f8b;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            padding: 3px;
+            
+        }
+    
+        .isipostingall h2{
+            text-align: center;
+            color: wheat;
+            font-size: 15px;
+    
+           
+        }
+    
+        .gambardepan{
+            width: 900px;
+            height: 500px;
+            float: none;
+            margin: 0px 5px 5px 15px;
+            text-align: center;
+            border: 5px solid black;
+            
+        }
+    
+       
+    
+        footer{
+                background-color: black;
+                padding: 20px;
+                text-align: center;
+                color:white;
+                
+             }
+    
+    
+       </style>
+
+</head>
+<body>
+    <header>
+        <img src="Images/FIFTY30.png" width="25%">
+    </header>
+
+    <div class="navbar">
+    
+        <a href="index.html">HOME</a></li> 
+        <div class="dropdown">
+            <button class="dropbtn">ABOUT</button>
+            <div class="dropdown-content">
+                <a href="about.html">Biographies</a>
+                <a href="pictures.html">Pictures</a>
+            </div>
+        </div>
+        <a href="news.html">NEWS</a></li>
+        <a href="music.html">MUSIC</a></li>
+        <a href="store.html">STORE</a></li>  
+    </div>
+    <div id="runningtext">
+        <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+            FIFTY FIFTY Bangkit Di Tengah Kontroversi: Kesuksesan Memuncaki Tanggal Lagu & Mengurai Perselisihan </marquee>
+       </div>
+
+       <article> 
+        <H1>     </H1>
+
+    <div id="isi">
+        <div class="isipostingall">
+            <img src="Images/kri10.webp" class="gambardepan">
+            <h2>Rahma Aulia Izzati - Editor news.id</h2>
+            <h2> 27 Juli 2023, 12:31 WIB</h2><br>
+            <h3> EDITORNEWS.ID- Boyband asal Korea Selatan, FIFTY FIFTY, seolah berada dalam situasi yang unik dan paradoks.
+                 Menurut data terbaru dari tangga lagu Billboard Amerika, "Cupid" FIFTY FIFTY mencapai posisi ke-24 di daftar 
+                 'Hot 100' pada tanggal 29. Sebuah pencapaian yang mengesankan mengingat band yang belum merayakan hari
+                  jadinya yang pertama ini berhasil mempertahankan popularitas selama hampir 20 minggu di chart utama Billboard.<br><br>
+                  Namun, segalanya jauh dari kelancaran di dalam negeri untuk FIFTY FIFTY. Anggota band telah menggugat 
+                  agensi mereka, Attrakt, menuduh pembukuan yang tidak jelas dan berusaha untuk menangguhkan kontrak eksklusif mereka. 
+                  Sementara Attrakt secara terbuka menyerukan pemahaman dan dialog terbuka, orang dalam yang dekat dengan FIFTY FIFTY
+                  menganggap ini tidak lebih dari permainan media oleh perusahaan.<br><br>
+                  Banyak orang menghubungkan konflik band dengan Seong-Il Ahn, pimpinan The Givers, yang memiliki kontrak layanan 
+                  produksi dengan Attrakt. Ahn dikenal sebagai produser yang menemukan lagu asli untuk "Cupid".
+                  Tampaknya anggota FIFTY FIFTY lebih mengandalkan Produser Ahn daripada Jun-Hong Jeon, kepala agensi mereka Attrakt,
+                  menunjukkan hubungan yang lebih dekat. Hal ini membuat Jeon mencurigai Ahn terlebih dahulu ketika dia melihat 
+                  sinyal yang tidak biasa dari anggota FIFTY FIFTY yang mempersiapkan gugatan tersebut. Jeon percaya bahwa Ahn,
+                  yang awalnya berjuang untuk mengumpulkan dana investasi, merongrongnya dan memecah belah anggota band untuk
+                  kegiatan di masa depan.<br><br>
+                  Jeon sebelumnya telah mengajukan pengaduan terhadap Ahn dan lainnya atas gangguan bisnis, penghancuran catatan elektronik, 
+                  penipuan, dan pelanggaran tugas di Kantor Polisi Gangnam di Seoul. Kontroversi lebih lanjut seputar Ahn terus terungkap. 
+                  Pertama, ada kecurigaan pemalsuan yang melibatkan komposer asli "Cupid". Sebuah outlet media baru-baru ini melaporkan
+                  bahwa sementara Ahn mengklaim memegang 99,5% hak cipta setelah mengontrak tiga komposer Swedia dari "Cupid", 
+                  dia sebenarnya memalsukan tanda tangan mereka dan menyerahkan dokumen kontroversial tersebut ke Asosiasi Hak 
+                  Cipta Musik Korea.Tapi kontroversi tidak berhenti di situ. Juga terungkap bahwa la kang pendidikan dan riwayat
+                  kerja Ahn telah dipalsukan.<br><br>
+                  Sebuah outlet menyatakan bahwa sementara latar belakang pendidikan Ahn yang tercantum di berbagai situs portal 
+                  adalah 'lulusan Departemen Administrasi Bisnis Universitas Chung-Ang,' tidak ada orang bernama Ahn dalam daftar 
+                  lulusan departemen tersebut. Ahn juga dituduh melebih-lebihkan riwayat karirnya dengan perusahaan hiburan lain.
+                  Ahn mengakui kesalahan dalam riwayat akademik dan kariernya dalam sehari, meminta maaf atas kebingungan tersebut.
+                  Banyak yang bertanya-tanya mengapa dia merasa perlu memalsukan kredensial pendidikannya di industri di mana
+                  keterampilan lebih dihargai daripada pendidikan. FIFTY FIFTY dan Ahn tampaknya sengaja menjauhkan diri satu sama 
+                  lain, terutama karena kontroversi Ahn terus menimbulkan gelombang. Ahn bahkan telah mengumumkan bahwa dia akan
+                  berpisah dari FIFTY FIFTY.<br><br>
+                  Namun, sedikit yang percaya klaim ini. Tampaknya tidak mungkin sebuah band, bahkan belum setahun setelah debut mereka,
+                  dapat mengatur semuanya tanpa bantuan. Beberapa menunjuk pada kasus penyanyi Son Seung-Yeon, yang namanya disebut-sebut
+                  saat putus dengan Fortune. Salah satu nama yang muncul dalam proses itu adalah nama Ahn. Baik Son Seung-Yeon dan Ahn
+                  telah membantah keras hal ini. Son menyatakan bahwa dia memiliki alasan yang jelas untuk menuntut pemutusan kontrak 
+                  eksklusifnya dengan Fortune, menekankan bahwa dia akan secara hukum menanggapi setiap kesalahpahaman dan spekulasi
+                  tergesa-gesa yang tidak terkait dengan Ahn.Namun, yang menarik adalah apa yang benar-benar diinginkan oleh anggota
+                  FIFTY FIFTY. Selain alasan yang dikemukakan oleh pengacara mereka di pengadilan, sulit untuk mengukur apa 
+                  kan.<br><br>
+                  Mereka telah mencapai peringkat teratas Billboard, tetapi gagal menerima tepuk tangan dari penggemar domestik mereka.
+                  Orang tidak bisa tidak bertanya-tanya tujuan apa yang ingin mereka capai di tengah semua kekacauan ini.***
+    
+                </h3> 
+        </div>
+    </div>
+
+
+    </article>
+
+    <footer>
+        <p>Copyrightⓒ2023 ATTRAKT Co., Ltd. All rights reserved.</p>
+    </footer>
+    
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    
+        header{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: wheat;
+           
+           
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            border: 2px solid #b04f8b;
+    
+        }
+        .navbar a{
+            float: left;
+            font-size: 18px;
+            color: #b04f8b;
+            padding: 10px 30px;
+            text-decoration: none;
+            text-align: center; 
+            border-bottom: 3px solid transparent;
+            font-family: 'Abril Fatface', cursive;
+    
+        }
+    
+        .navbar a:hover{
+            color: wheat;
+            border-bottom: 3px solid wheat
+        }
+       
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn{
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: #b04f8b;
+            padding: 15px 30px;
+            background-color: black;
+            font-size: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn{
+            background-color: palevioletred;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #b04f8b;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px palevioletred;
+            z-index: 1;
+    
+        }
+        .dropdown-content a{
+            float: none;
+            color: pink;
+            padding: 15px 18px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+            background-color: palevioletred;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    
+        #runningtext{
+            width: 100%;
+            height: 100%;
+            padding-top: 7px;
+            margin: 0px 0 0px 0;
+            background-color: black;
+            color: wheat;
+            position: relative;
+            font-size: 20px;
+            border: 2px solid #b04f8b;
+            font-family: 'Crimson Text', serif;
+        }
+
+        #runningtext2{
+            width: 100%;
+            height: 100%;
+            padding-top: 7px;
+            margin: 0px 0 0px 0;
+            background-color: black;
+            color: wheat;
+            position: relative;
+            font-size: 20px;
+            border: 2px solid #b04f8b;
+            font-family: 'Crimson Text', serif;
+        }
+
+        #runningtext3{
+            width: 100%;
+            height: 100%;
+            padding-top: 7px;
+            margin: 0px 0 0px 0;
+            background-color: black;
+            color: wheat;
+            position: relative;
+            font-size: 20px;
+            border: 2px solid #b04f8b;
+            font-family: 'Crimson Text', serif;
+        }
+        
+        #runningtext4{
+            width: 100%;
+            height: 100%;
+            padding-top: 7px;
+            margin: 0px 0 0px 0;
+            background-color: black;
+            color: wheat;
+            position: relative;
+            font-size: 20px;
+            border: 2px solid #b04f8b;
+            font-family: 'Unna', serif;
+        }
+    
+        article{
+                background-color: #b04f8b;
+                padding: 80px;
+                text-align: center;
+                font-size: 15px;
+                color: black;
+                font-family: 'Unna', serif;
+               
+               
+                
+        }
+    
+        .isipostingall{
+            background-color: #b04f8b;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            padding: 3px;
+            
+        }
+
+        .isipostingall2{
+            background-color: #b04f8b;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            padding: 3px;
+            
+        }
+
+        .isipostingall3{
+            background-color: #b04f8b;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            padding: 3px;
+            
+        }
+
+        .isipostingall4{
+            background-color: #b04f8b;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            padding: 3px;
+        }
+            
+    
+        .isipostingall h2{
+            text-align: center;
+            color: wheat;
+            font-size: 15px;
+    
+           
+        }
+    
+        .gambardepan{
+            width: 900px;
+            height: 500px;
+            float: none;
+            margin: 0px 5px 5px 15px;
+            text-align: center;
+            border: 5px solid black;
+            
+        }
+    
+       
+    
+        footer{
+                background-color: black;
+                padding: 20px;
+                text-align: center;
+                color:white;
+                
+             }
+    
+    
+       </style>
+
+</head>
+<body>
+    <header>
+        <img src="Images/FIFTY30.png" width="25%">
+    </header>
+
+    <div class="navbar">
+    
+        <a href="index.html">HOME</a></li> 
+        <div class="dropdown">
+            <button class="dropbtn">ABOUT</button>
+            <div class="dropdown-content">
+                <a href="about.html">Biographies</a>
+                <a href="pictures.html">Pictures</a>
+            </div>
+        </div>
+        <a href="news.html">NEWS</a></li>
+        <a href="music.html">MUSIC</a></li>
+        <a href="store.html">STORE</a></li>  
+    </div>
+    <div id="runningtext">
+        <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+            Kronologi Agensi FIFTY FIFTY Tuntut Penulis Lagu Cupid, Kenapa? </marquee>
+       </div>
+
+       <article> 
+        <h1>Dituduh sebagai kekuatan luar yang mempengaruhi FIFTY FIFTY </h1><br>
+
+    <div id="isi">
+        <div class="isipostingall">
+            <img src="Images/kri11.webp" class="gambardepan">
+            <h2>Anis - IDN TIMES</h2>
+            <h2> 29 Jun 23 | 15:59</h2><br>
+            <h3>Tampaknya, permasalahan ataupun konflik yang sedang dihadapi oleh agensi FIFTY FIFTY belum sepenuhnya berakhir, nih.
+                Bahkan setelah dituntut sang artis baru-baru ini, ATTRAKT malah diketahui telah mempolisikan penulis lagu "Cupid", lho.
+                Dengan permasalahan yang memasuki babak baru ini, banyak netizen yang mulai bertanya-tanya alasan ATTRAKT akhirnya
+                melaporkan penulis lagu "Cupid" ke kepolisian. Untuk yang penasaran, simak ulasannya berikut ini. Check this out!<br><br><br>
+
+                <div id="runningtext2">
+                    <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+                        Penulis lagu "Cupid" dilaporkan atas tuduhan penipuan hingga pelanggaran kepercayaan</marquee>
+                    </div><br><br>
+                
+                               <div id="isi">
+                                <div class="isipostingall2">
+                                    <img src="Images/kri15.jpg" class="gambardepan2">
+                                    <h2>Anis - IDN TIMES</h2>
+                                    <h2> 29 Jun 23 | 15:59</h2><br>
+
+                
+
+                Pada Rabu (28/6/2023), ATTRAKT selaku agensi FIFTY FIFTY dilaporkan telah memilih jalur hukum untuk menyelesaikan 
+                permasalahannya dengan Ahn Sung Il atau yang juga dikenal sebagai SIAHN, mantan Co-CEO, pencipta lagu, sekaligus
+                produser hit "Cupid". ATTRAKT mengumumkan bahwa pihak mereka telah mengajukan tuntutan pidana terhadap Ahn Sung Il, 
+                yang merupakan CEO dari grup pengembangan konten kreatif The Givers, serta tiga orang lainnya atas dugaan penipuan 
+                hingga pelanggaran kepercayaan.<br><br>
+
+                <div id="runningtext3">
+                    <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+                        Agensi FIFTY FIFTY menduga Ahn Sung Il telah melakukan pengkhianatan</marquee>
+                    </div><br><br>
+                
+                               <div id="isi">
+                                <div class="isipostingall3">
+                                    <img src="Images/kri12.png" class="gambardepan2">
+                                    <h2>Anis - IDN TIMES</h2>
+                                    <h2> 29 Jun 23 | 15:59</h2><br>
+
+                Dalam laporan yang dilayangkan, ATTRAKT menjelaskan bahwa The Givers telah bekerja hingga mengelola proyek-proyek untuk mereka
+                setelah menandatangani kontrak dengan agensi tersebut. Namun, pihak Ahn Sung Il rupanya telah melakukan pengkhianatan. 
+                Agesni FIFTY FIFTY ini menuduh Ahn Sung Il telah melakukan tindakan penipuan sekaligus penghalangan usaha, seperti
+                menunda untuk meyerahkan pekerjaan, menghapus akun email perusahaan, dan menghapus materi terkait proyek-proyek sebelumnya.
+                “Selain itu, dalam proses pembelian lagu FIFTY FIFTY "Cupid" dari penulis lagu asing, The Givers tidak memberikan informasi 
+                kepada ATTRAKT mengenai pembelian hak cipta, dan mereka diam-diam membeli hak cipta atas nama mereka atau perusahaan
+                mereka tanpa sepengetahuan kami," tutur pihak ATTRAKT.<br><br><br>
+
+                <div id="runningtext4">
+                    <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+                        ATTRAKT mencurigai pihak lain yang diduga bersangkutan melakukan tindakan ilegal</marquee>
+                    </div><br><br>
+                
+                               <div id="isi">
+                                <div class="isipostingall4">
+                                    <img src="Images/kri14.avif" class="gambardepan2">
+                                    <h2>Anis - IDN TIMES</h2>
+                                    <h2> 29 Jun 23 | 15:59</h2><br>
+
+                
+                Dengan pengkhiatan yang dilakukan The Givers dan Ahn Sung Il, ATTRAKT menyimpulkan bahwa mereka saat ini tengah mencurigai 
+                beberapa pihak lain yang diduga bersangkutan dalam tindakan ilegal lainnya, selain nama-nama yang sudah dilaporkan tersebut.
+                "Kami mungkin akan mengajukan pengaduan (kriminal) tambahan juga,” tandas ATTRAKT. 
+                Saat ini ATTRAKT memang sedang gencar melaporkan beberapa pihak yang diduga telah mendekati FIFTY FIFTY untuk 
+                membujuk mereka untuk melanggar kontrak eksklusif. Nah, kira-kira bagaimana pendapatmu nih, yeorobun?
+
+
+                </h3> 
+        </div>
+    </div>
+
+
+    </article>
+
+    <footer>
+        <p>Copyrightⓒ2023 ATTRAKT Co., Ltd. All rights reserved.</p>
+    </footer>
+    
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        header{
+            background-color:black;
+            padding: 20px;
+            text-align: center;
+            color: #b04f8b;
+           
+            
+            
+        }
+        
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            border: 2px solid #b04f8b;
+                   
+            
+        }
+        .navbar a{
+            float: left;
+            font-size: 18px;
+            color: #b04f8b;
+            padding: 10px 30px;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 3px solid transparent;
+            font-family: 'Abril Fatface', cursive;
+               
+               
+        }
+
+        
+        .navbar a:hover{
+            color: wheat;
+            border-bottom: 3px solid wheat
+        }
+       
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn{
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: #b04f8b;
+            padding: 15px 30px;
+            background-color: black;
+            font-size: inherit;
+            margin: 0;
+        }
+        .navbar a:hover,
+        .dropdown:hover .dropbtn{
+            background-color: palevioletred;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #b04f8b;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px palevioletred;
+            z-index: 1;
+
+        }
+        .dropdown-content a{
+            float: none;
+            color: pink;
+            padding: 15px 18px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+            background-color: palevioletred;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        
+        .banner{
+            height: 100vh;
+            background-image: url("Images/background4.png");
+            background-size: cover;
+            position: relative;
+        }
+
+        
+        .banner:after{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color:rgba(240, 7, 120, 0.4);
+            
+        }
+
+       
+         article{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            font-family: 'Unna', serif;
+           
+
+        }
+
+        
+        .fa-instagram{
+            color: rgb(233, 227, 224);
+            background-color:red;
+            font-size: 15px;
+            padding: 10px;
+            border: 2px solid;
+            border-radius: 10px;
+            
+           
+        }
+        .fa-instagram{background-color: red;} /* Green */
+        .fa-instagram:hover {background-color: rgb(241, 155, 158);}
+
+        .fa-twitter{
+            color: rgb(235, 242, 244);
+            background-color: rgb(25, 177, 228);
+            font-size: 15px;
+            padding: 10px;
+            border: 2px solid;
+            border-radius: 10px;
+        }
+        .fa-twitter{background-color:  rgb(25, 177, 228);} /* Green */
+        .fa-twitter:hover {background-color: rgb(178, 237, 242);}
+
+        .fa-youtube-play{
+            color: rgb(252, 251, 251);
+            background-color: rgb(157, 25, 25);
+            font-size: 15px;
+            padding: 10px;
+            border: 2px solid;
+            border-radius: 10px;
+        }
+        .fa-youtube-play{background-color:  rgb(157, 25, 25);} /* Green */
+        .fa-youtube-play:hover {background-color: rgb(240, 141, 141);}
+
+        
+        
+        .fa-spotify{
+            color: rgb(247, 249, 247);
+            background-color: rgb(8, 197, 20);
+            font-size: 15px;
+            padding: 10px;
+            border: 2px solid;
+            border-radius: 10px;
+        }
+        .fa-spotify{background-color:  rgb(8, 197, 20);} /* Green */
+        .fa-spotify:hover {background-color: rgb(193, 241, 176);}
+
+        
+
+        body{
+            background-image: url("Images/background4.png");
+            
+           
+        }
+
+        .hi-slide{
+            position: relative;
+            width: 400px;
+            height: 350px;
+            border: 20px ;
+            
+             
+           
+        }
+
+        
+        footer{
+            background-color:#b04f8b;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            border: 2px solid black;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        
+        @media (max-width:800px) {
+            article, footer, header, .navbar a, .banner:after {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    </style>   
+
+</head>
+<body>
+    <header> 
+        <h1>
+            <img src="Images/FIFTY30.png" width="25%">
+        </h1>
+
+    </header>
+
+    <section> 
+        <div class="navbar">
+            <a href="index.html">HOME</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">ABOUT</button>
+                <div class="dropdown-content">
+                    <a href="about.html">Biographies</a>
+                    <a href="pictures.html">Pictures</a>
+                </div>
+            </div>
+            <a href="news.html">NEWS</a></li>
+            <a href="music.html">MUSIC</a></li>
+            <a href="store.html">STORE</a></li>  
+        </div>
+            
+    </section>
+    <section class="banner">
+       <h2> </h2>
+     </section>
+
+     
+    <div class="hi-slide">
+        <div class="hi-prev"></div>
+        <div class="hi-next"></div>
+        
+    </div>
+   
+        
+    <article>
+      
+
+         <p><br>Fifty Fifty adalah grup perempuan Koreaa Selatan yang dibentuk oleh Attrakt
+            pada tahun 2022. Grup ini terdiri dari empat anggota: Saena, Aran, Keena, dan Sio.<br>
+            Fifty Fifty memulai debutnya pada 18 November 2022, dengan single "Higher" dari album
+            mini pertama mereka TheFfty.</p>
+
+        <p><br>Aktif sejak: 2022<br> 
+            <br>Album: THE FIFTY FIFTY<br>
+            <br>Label rekaman: Attrakt, Warner Records<br>
+            <br>Genre: K-pop:R&B:Dance-pop<br>
+            </p>
+
+            <br><br><br>
+            <a href="https://instagram.com/we_fiftyfifty?igshid=MzRlODBiNWFlZA==" class="fa fa-instagram" target="_blank">we_fiftyfifty </a>
+            <a href="https://twitter.com/we_fiftyfifty?s=20"  class="fa fa-twitter" target="_blank">we_fiftyfifty </a> 
+            <a href="https://www.youtube.com/@WE_FIFTYFIFTY"  class="fa fa-youtube-play" target="_blank">fifty fifty</a> 
+            <a href="https://open.spotify.com/artist/4GJ6xDCF5jaUqD6avOuQT6?si=u6Ar3s1TR2uUDeEbTvuGyg" class="fa fa-spotify" target="_blank">fiftyfifty</a> 
+
+            </div>
+            
+
+    </article>
+               
+    <footer>
+        <p>Copyrightⓒ2023 ATTRAKT Co., Ltd. All rights reserved.</p>
+
+    </footer>
+ 
+</body>
+</html>

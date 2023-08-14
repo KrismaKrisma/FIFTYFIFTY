@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    
+        header{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: wheat;
+           
+           
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            border: 2px solid #b04f8b;
+    
+        }
+        .navbar a{
+            float: left;
+            font-size: 18px;
+            color: #b04f8b;
+            padding: 10px 30px;
+            text-decoration: none;
+            text-align: center; 
+            border-bottom: 3px solid transparent;
+            font-family: 'Abril Fatface', cursive;
+    
+        }
+    
+        .navbar a:hover{
+            color: wheat;
+            border-bottom: 3px solid wheat
+        }
+       
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn{
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: #b04f8b;
+            padding: 15px 30px;
+            background-color: black;
+            font-size: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn{
+            background-color: palevioletred;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #b04f8b;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px palevioletred;
+            z-index: 1;
+    
+        }
+        .dropdown-content a{
+            float: none;
+            color: pink;
+            padding: 15px 18px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+            background-color: palevioletred;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    
+        #runningtext{
+            width: 100%;
+            height: 100%;
+            padding-top: 7px;
+            margin: 0px 0 0px 0;
+            background-color: black;
+            color: wheat;
+            position: relative;
+            font-size: 20px;
+            border: 2px solid #b04f8b;
+            font-family: 'Unna', serif;
+        }
+        
+    
+        article{
+                background-color: #b04f8b;
+                padding: 80px;
+                text-align: center;
+                font-size: 15px;
+                color: black;
+                font-family: 'Unna', serif;
+               
+               
+                
+        }
+    
+        .isipostingall{
+            background-color: #b04f8b;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            padding: 3px;
+            
+        }
+    
+        .isipostingall h2{
+            text-align: center;
+            color: wheat;
+            font-size: 15px;
+    
+           
+        }
+    
+        .gambardepan{
+            width: 900px;
+            height: 500px;
+            float: none;
+            margin: 0px 5px 5px 15px;
+            text-align: center;
+            border: 5px solid black;
+            
+        }
+    
+       
+    
+        footer{
+                background-color: black;
+                padding: 20px;
+                text-align: center;
+                color:white;
+                
+             }
+    
+    
+       </style>
+
+</head>
+<body>
+    <header>
+        <img src="Images/FIFTY30.png" width="25%">
+    </header>
+
+    <div class="navbar">
+    
+        <a href="index.html">HOME</a></li> 
+        <div class="dropdown">
+            <button class="dropbtn">ABOUT</button>
+            <div class="dropdown-content">
+                <a href="about.html">Biographies</a>
+                <a href="pictures.html">Pictures</a>
+            </div>
+        </div>
+        <a href="news.html">NEWS</a></li>
+        <a href="music.html">MUSIC</a></li>
+        <a href="store.html">STORE</a></li>  
+    </div>
+    <div id="runningtext">
+        <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+            Setelah Laporan Dispatch Muncul, KNetz Kompak Berikan Reaksi ini Terhadap FIFTY FIFTY dan Ahn Sung Il</marquee>
+       </div>
+
+       <article> 
+        <H1>     </H1>
+
+    <div id="isi">
+        <div class="isipostingall">
+            <img src="Images/kri11.webp" class="gambardepan">
+            <h2>Egi Nurcahyani - Kpop Chart</h2>
+            <h2> Selasa, 18 Juli 2023 | 09:59 WIB</h2><br>
+            <h3> KPOPCHART.NET - Dispatch baru saja merilis bukti baru dimana Ahn Sung Il memalsukan tanda tangan 
+                 dan rekayasa hak cipta "Cupid" dari FIFTY FIFTY. Akibat bukti yang dirilis Dispatch, publik
+                 terus melakukan penolakan terhadap FIFTY FIFTY dan Ahn Sung Il CEO The Givers. 
+                 Pada (17/7), Dispatch melaporkan bahwa CEO The Givers, Ahn Sung Il diduga memalsukan tanda 
+                 tangan penulis lagu Swedia di balik lagu hits FIFTY FIFTY "Cupid" untuk mendapatkan hak cipta secara 
+                 ilegal, setelah dikonfirmasi, pengalihan hak cipta dapat ditangguhkan.<br><br>
+                 Dispatch menemuka tanda tangan asli dari penulis lagu Swedia berbeda antara perjanjian pengalihan 
+                 hak dan perjanjian pengalihan saham. Setelah perjanjian pengalihan saham direvisi, pembagian awal
+                 berubah drastis. Menurut revisi tersebut, tim penulis lagu Swedia kehilangan seluruh bagian mereka 
+                 dan terjadi pengurangan bagian untuk anggota FIFTY FIFTY, Keena.<br><br>
+                 Hebatnya, Ahn Sung Il berhasil mengalihkan 74,5 persen saham hak cipta dari orang lain ke dirinya sendiri. 
+                 Penting digarisbawahi bahwa jika dokumen ini terbukti dipalsukan, Ahn Sung Il akan dimintai pertanggung jawaban
+                 karena melakukan tindak pidana.<br><br>
+                 Menyusul laporan Dispatch, pihak Ahn Sung Il dari The Givers telah menanggapi dengan menyatakan bahwa mereka
+                 mengonfirmasi fakta. Dengan lebih banyak laporan dan pengembangan kontroversi FIFTY FIFTY, opini publik grup
+                 dan The Givers terus anjlok.<br><br>
+                 Banyak netizen Korea bingung dengan penemuan terbaru Dispatch dan berkumpul di komunitas online dan membagikan pemikiran mereka.
+                 Knetz berkomentar di situs online theqoo: "Dia benar-benar penjahat," "Dia pasti seorang penipu," "Ini sangat gila," "Sepertinya
+                 para anggota juga ditipu." "Aku ingin tahu apakah Dispatch akan merilis pernyataan dari penulis lagu," "Saya tidak berpikir
+                 ini adalah pertama kalinya dia melakukan hal seperti ini," "Dia penipu yang gila," dan "Wow, dia mengambil 6% saham Keena."<br>
+                 Netizen Korea juga berkomentar, "Apa yang perlu dia konfirmasi? 
+                 Jika dia ingat memalsukan tanda tangannya?" "Jika tidak, ya tidak. Jika ya, ya. Apa lagi yang perlu mereka konfirmasi?
+                 ""lol, setidaknya dia menjawab dengan mengatakan dia membenarkan.
+                 ""Mereka pasti sedang melakukan sesuatu yang mencurigakan," dan komentar lainnya.
+                </h3> 
+        </div>
+    </div>
+
+
+    </article>
+
+    <footer>
+        <p>Copyrightⓒ2023 ATTRAKT Co., Ltd. All rights reserved.</p>
+    </footer>
+    
+
+
+
+    
+</body>
+</html>

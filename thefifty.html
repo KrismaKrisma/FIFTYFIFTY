@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <style>
+         *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        header{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: wheat;
+           
+           
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+            border: 2px solid #b04f8b;
+        }
+
+        .navbar a{
+            float: left;
+            font-size: 18px;
+            color: #b04f8b;
+            padding: 10px 30px;
+            text-decoration: none;
+            text-align: center; 
+            border-bottom: 3px solid transparent;
+            font-family: 'Abril Fatface', cursive;
+
+        }
+
+        .navbar a:hover{
+            color: wheat;
+            border-bottom: 3px solid wheat
+        }
+       
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn{
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: #b04f8b;
+            padding: 15px 30px;
+            background-color: black;
+            font-size: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn{
+            background-color: palevioletred;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #b04f8b;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px palevioletred;
+            z-index: 1;
+
+        }
+        .dropdown-content a{
+            float: none;
+            color: pink;
+            padding: 15px 18px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+            background-color: palevioletred;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        article{
+            background-color: #b04f8b;
+            padding: 50px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        
+        }
+
+        button{
+            font-family:'Barlow', sans-serif;
+            background-color: black;
+            border: 2px solid white;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 10%;
+            color: white;
+            font-size: 30px;
+        }
+        button{background-color: black} /* Green */
+        button:hover {background-color: rgb(197, 192, 192);}
+
+
+
+
+        img{
+            border: 5px solid black;
+        }
+
+        footer{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            color:white;
+            
+         }
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="Images/FIFTY30.png" width="30%">
+    </header>
+
+    <div class="navbar">
+        <a href="index.html">HOME</a></li> 
+        <div class="dropdown">
+            <button class="dropbtn">ABOUT</button>
+            <div class="dropdown-content">
+                <a href="about.html">Biographies</a>
+                <a href="pictures.html">Pictures</a>
+            </div>
+        </div>
+        <a href="news.html">NEWS</a></li>
+        <a href="music.html">MUSIC</a></li>
+        <a href="#">STORE</a></li>  
+    </div>
+
+    <article>
+      
+            <img src="Images/thefifty.png" width="24%"><br><br>
+            <p> Artis: Fifty Fifty</p><br>
+            <p> Tanggal Rilis: 18 November 2022</p><br>
+            <p> Genre: K-Pop</p><br>
+            <p> Label: Warner Music Korea</p><br><br>
+       
+        
+        <center><a href="music.html"><button>Back</button></a></center>
+    </article>
+    
+    
+
+    <footer>
+        <p>Copyrightⓒ2023 ATTRAKT Co., Ltd. All rights reserved.</p>
+    </footer>
+
+
+    
+
+        
+
+    
+</body>
+</html>

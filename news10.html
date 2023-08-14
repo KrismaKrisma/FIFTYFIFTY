@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    
+        header{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: wheat;
+           
+           
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            border: 2px solid #b04f8b;
+    
+        }
+        .navbar a{
+            float: left;
+            font-size: 18px;
+            color: #b04f8b;
+            padding: 10px 30px;
+            text-decoration: none;
+            text-align: center; 
+            border-bottom: 3px solid transparent;
+            font-family: 'Abril Fatface', cursive;
+    
+        }
+    
+        .navbar a:hover{
+            color: wheat;
+            border-bottom: 3px solid wheat
+        }
+       
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn{
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: #b04f8b;
+            padding: 15px 30px;
+            background-color: black;
+            font-size: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn{
+            background-color: palevioletred;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #b04f8b;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px palevioletred;
+            z-index: 1;
+    
+        }
+        .dropdown-content a{
+            float: none;
+            color: pink;
+            padding: 15px 18px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+            background-color: palevioletred;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    
+        #runningtext{
+            width: 100%;
+            height: 100%;
+            padding-top: 7px;
+            margin: 0px 0 0px 0;
+            background-color: black;
+            color: wheat;
+            position: relative;
+            font-size: 20px;
+            border: 2px solid #b04f8b;
+            font-family: 'Crimson Text', serif;
+        }
+
+        #runningtext2{
+            width: 100%;
+            height: 100%;
+            padding-top: 7px;
+            margin: 0px 0 0px 0;
+            background-color: black;
+            color: wheat;
+            position: relative;
+            font-size: 20px;
+            border: 2px solid #b04f8b;
+            font-family: 'Crimson Text', serif;
+        }
+
+        #runningtext3{
+            width: 100%;
+            height: 100%;
+            padding-top: 7px;
+            margin: 0px 0 0px 0;
+            background-color: black;
+            color: wheat;
+            position: relative;
+            font-size: 20px;
+            border: 2px solid #b04f8b;
+            font-family: 'Unna', serif;
+        }
+        
+        #runningtext4{
+            width: 100%;
+            height: 100%;
+            padding-top: 7px;
+            margin: 0px 0 0px 0;
+            background-color: black;
+            color: wheat;
+            position: relative;
+            font-size: 20px;
+            border: 2px solid #b04f8b;
+            font-family: 'Crimson Text', serif;
+        }
+    
+        article{
+                background-color: #b04f8b;
+                padding: 80px;
+                text-align: center;
+                font-size: 15px;
+                color: black;
+                font-family: 'Unna', serif;
+               
+               
+                
+        }
+    
+        .isipostingall{
+            background-color: #b04f8b;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            padding: 3px;
+            
+        }
+
+        .isipostingall2{
+            background-color: #b04f8b;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            padding: 3px;
+            
+        }
+
+        .isipostingall3{
+            background-color: #b04f8b;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            padding: 3px;
+            
+        }
+
+        .isipostingall4{
+            background-color: #b04f8b;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            padding: 3px;
+        }
+            
+    
+        .isipostingall h2{
+            text-align: center;
+            color: wheat;
+            font-size: 15px;
+    
+           
+        }
+    
+        .gambardepan{
+            width: 900px;
+            height: 500px;
+            float: none;
+            margin: 0px 5px 5px 15px;
+            text-align: center;
+            border: 5px solid black;
+            
+        }
+    
+       
+    
+        footer{
+                background-color: black;
+                padding: 20px;
+                text-align: center;
+                color:white;
+                
+             }
+    
+    
+       </style>
+
+</head>
+<body>
+    <header>
+        <img src="Images/FIFTY30.png" width="25%">
+    </header>
+
+    <div class="navbar">
+    
+        <a href="index.html">HOME</a></li> 
+        <div class="dropdown">
+            <button class="dropbtn">ABOUT</button>
+            <div class="dropdown-content">
+                <a href="about.html">Biographies</a>
+                <a href="pictures.html">Pictures</a>
+            </div>
+        </div>
+        <a href="news.html">NEWS</a></li>
+        <a href="music.html">MUSIC</a></li>
+        <a href="store.html">STORE</a></li>  
+    </div>
+    <div id="runningtext">
+        <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+            Kronologi Isu Fifty Fifty Dibajak Pihak Ketiga Usai Lagu Cupid Viral, Warner Music Korea Sampai Angkat Suara</marquee>
+       </div>
+
+       <article> 
+
+    <div id="isi">
+        <div class="isipostingall">
+            <img src="Images/kri19.jpg" class="gambardepan">
+            <h2> Ratnaning Asih - Luputan6</h2>
+            <h2> 26 Jun 2023, 17:00 WIB</h2><br>
+            <h3>Liputan6.com, Seoul - Siapa sih warganet yang belum pernah dengar lagu “Cupid” dari Fifty Fifty? Walau tidak pernah dengar
+                secara keseluruhan, setidaknya bagian chorus lagu tersebut sudah tak asing, karena selama beberapa waktu belakangan
+                seliweran di berbagai media sosial.
+                Popularitas “Cupid” jelas meroketkan nama Fifty Fifty, mulai dari masuk tangga lagu Bilboard hingga terlibat 
+                dalam pembuatan soundtrack film Barbie. Ini adalah cerita sukses yang jarang terjadi di jagat K-Pop, untuk grup 
+                yang berasal dari agensi relatif kecil.<br><br>
+                Hanya saja, tampaknya kesuksesan ini belakangan menjadi bumerang bagi sang agensi, Attrakt (nama resmi ditulis 
+                seluruhnya dalam huruf kapital). Menurut pihak agensi, ada pihak ketiga yang hendak membajak Fifty Fifty.
+                Hal ini pertama terungkap dalam penjelasan pihak Attrakt pada 23 Juni 2023 lalu. Dilansir dari Soompi, perwakilan
+                agensi kala itu menjelaskan alasan mengapa Fifty Fifty jarang melakukan aktivitas promosi, padahal mereka meraih 
+                kesuksesan global. Pihak agensi menjelaskan, bahwa awalnya Fifty Fifty rehat karena salah satu membernya
+                mengalami gangguan kesehatan. Sembari mengistirahatkan para personel grup ini, agensi memutuskan untuk bersiap
+                diri untuk menggelar kegiatan grup ini pada masa mendatang. “Namun di tengah persiapan yang dilakukan dengan tekun, 
+                kami menemukan pihak eksternal yang mendekati artis agensi kami dan membujuk mereka untuk melanggar kontrak 
+                eksklusif mereka dengan kami,” kata pihak Attrakt.<br><br><br>
+
+            
+
+     <div id="runningtext2">
+         <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+             Buka Pintu untuk Fifty Fifty</marquee>
+            </div><br><br>
+                
+    <div id="isi">
+        <div class="isipostingall2">
+            <img src="Images/kri17.webp" class="gambardepan2">
+            <h2>Ratnaning Asih - Liputan6</h2>
+            <h2> 26 Juni 2023, 17:00 WIB</h2><br>
+                Dalam pernyataan ini, Attrakt menjelaskan bahwa meski mereka adalah agensi kecil, pihaknya tak
+                takut untuk memperjuangkan diri. Termasuk untuk mengambil langkah hukum Sehari setelahnya,
+                CEO Attrakt Jeon Hong Joon, mengatakan dirinya akan mempertahankan martabat dan menghadapi sengketa ini. 
+                Ia juga membuka pintu lebar-lebar untuk anggota Fifty Fifty yakni Saena, Aran, Keena, dan Sio.
+                "Saya berharap mereka akan kembali secepat mungkin ke agensi mereka, dan secara bertahap maju 
+                dalam proyek yang sedang kami persiapkan, seperti promosi ke Amerika,” kata dia. <br><br><br>
+
+
+    <div id="runningtext3">
+        <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+            Tuding Warner Music Korea</marquee>
+            </div><br><br>
+                
+            <div id="isi">
+            <div class="isipostingall3">
+            <img src="Images/kri16.webp" class="gambardepan2">
+            <h2>Ratnaning Asih - Liputan6</h2>
+            <h2> 26 Juni 2023, 17:00 WIB</h2><br>
+            Perkembangan terakhir, pada hari ini Senin (26/6/2023), Jeong Hong Joon menyebut bahwa pihak yang ingin membajak Fifty 
+            Fifty adalah Warner Music Korea. “Kami telah memperoleh bukti material mengenai upaya nyata merebut anggota 
+            Fifty Fifty secara ilegal. Kami meminta Warner Music Korea membuat penjelasan dan pernyataan seperti apa persisnya
+            posisi resmi mereka,” begitu isi pernyataan Attrakt.
+             
+        </div>
+    </div>
+
+
+    </article>
+
+    <footer>
+        <p>Copyrightⓒ2023 ATTRAKT Co., Ltd. All rights reserved.</p>
+    </footer>
+    
+
+
+
+    
+</body>
+</html>

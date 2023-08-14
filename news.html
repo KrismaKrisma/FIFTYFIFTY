@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        header{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: wheat;
+           
+           
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            border: 2px solid #b04f8b;
+
+        }
+        .navbar a{
+            float: left;
+            font-size: 18px;
+            color: #b04f8b;
+            padding: 10px 30px;
+            text-decoration: none;
+            text-align: center; 
+            border-bottom: 3px solid transparent;
+            font-family: 'Abril Fatface', cursive;
+
+        }
+
+        .navbar a:hover{
+            color: wheat;
+            border-bottom: 3px solid wheat
+        }
+       
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn{
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: #b04f8b;
+            padding: 15px 30px;
+            background-color: black;
+            font-size: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn{
+            background-color: palevioletred;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #b04f8b;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px palevioletred;
+            z-index: 1;
+
+        }
+        .dropdown-content a{
+            float: none;
+            color: pink;
+            padding: 15px 18px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+            background-color: palevioletred;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+
+        article{
+            background-color: #b04f8b;
+            padding: 50px;
+            font-size: 15px;
+            font-family: 'Unna', serif;
+            background-image: linear-gradient( #b04f8b, pink);
+            
+            
+           
+        }
+
+       *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box; 
+       
+        
+       
+       }
+
+       
+       
+
+      
+       .blog-section .section-content{
+        width: 85%;
+        margin: 20px auto;
+       
+       
+       
+       }
+
+       .blog-section .section-content .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        margin:25px auto;
+        
+      
+        
+       }
+
+       .blog-section .section-content .cards .card{
+        width: 70%;
+        background-color: black;
+        position: relative;
+        border-radius: 30px;
+        text-align: center;
+       
+        
+        
+       }
+
+       .blog-section .section-content .cards .card  img{
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+      
+            
+        
+       }
+
+       .blog-section .section-content .cards .card .article{
+        padding: 15px 20px;
+      
+       
+       }
+
+       .blog-section .section-content .cards .card .article h4{
+        font-size: 20px;
+        text-align: center;
+        
+       
+       }
+
+       .blog-section .section-content .cards .card .article p{
+        font-size: 16px;
+        margin: 10px 0px;
+        color: white;
+       
+       
+       }
+
+       .blog-section .section-content .cards .card a{
+        text-decoration: none;
+        display: inline-block;
+        background-color: rgb(239, 200, 126);
+        padding: 8px 15px;
+        margin-left: 20px;
+        color: antiquewhite;
+        margin-bottom: 20px;
+        border-radius: 10px;
+       
+        
+       }
+
+       .blog-section .section-content .cards .card .posted-date{
+        font-weight: 600;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        background-color: rgb(234, 238, 229);
+        padding: 8px 15px;
+       
+     
+   
+       }
+
+
+       @media screen and (max-width: 992px) {
+        .blog-section .section-content .cards{
+       
+        grid-template-columns: repeat(2, 1fr);
+        
+       }
+        
+    }
+
+       @media screen and (max-width: 768px) {
+        .blog-section .section-content .cards{
+       
+        grid-template-columns: 1fr;
+        }
+    }
+
+
+   
+
+        footer{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            color:white;
+            
+         }
+        
+
+       
+
+        
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="Images/FIFTY30.png" width="25%">
+    </header>
+
+    <div class="navbar">
+
+        <a href="index.html">HOME</a></li> 
+        <div class="dropdown">
+            <button class="dropbtn">ABOUT</button>
+            <div class="dropdown-content">
+                <a href="about.html">Biographies</a>
+                <a href="pictures.html">Pictures</a>
+            </div>
+        </div>
+        <a href="news.html">NEWS</a></li>
+        <a href="music.html">MUSIC</a></li>
+        <a href="store.html">STORE</a></li>  
+    </div>
+
+ <article>
+    <div id="gradient"></div>
+
+    <div class="blog-section">
+        <div class="section-content blog">
+            <div class="title">
+                <h2>  </h2>
+
+            </div>
+            <div class="cards">
+            <div class="card">
+                    <div class="image-section">
+                        <img src="Images/attrakt6.webp">
+                    </div>
+                    <div class="article">
+                        <h4><a href="news1.html" target="_blank">
+                                Royalti Lagu 'Cupid' FIFTY FIFTY Ngak Dibayar Dulu Sampai Kasus Kelar</a></h4>
+                       <p> Korea Music Copyright Association (KOMCA) angkat bicara soal pembayaran royalti FIFTY FIFTY...</p>
+                   </div>
+                   <div class="blog-view">
+                     <a href="news1.html" class="button" target="_blank"> Read More</a>
+                   </div>
+                   <div class="posted-date">
+                    <p> 2 minggu lalu</p>
+                </div>
+            </div>
+
+
+    </div>
+    <div class="cards">
+    <div class="card">
+            <div class="image-section">
+                <img src="Images/attrakt1.jpg">
+            </div>
+            <div class="article">
+                <h4><a href="news3.html" target="_blank">
+                 Tak Mau Kembali Ke Agensi, Sidang Mediasi FIFTY FIFTY dan ATTRAKT Buntu</a></h4>
+               <p>SEOUL-Hasil sidang mediasi antara FIFTY FIFTY dan Attrakt tidak menghasilkan kesepakatan.
+                 Kedua belah pihak yang masing-masing didampingi...</p>
+           </div>
+           <div class="blog-view">
+             <a href="news3.html" class="button" target="_blank"> Read More</a>
+           </div>
+           <div class="posted-date">
+            <p> 3 minggu lalu</p>
+        </div>
+    </div>
+
+    </div>
+    <div class="cards">
+    <div class="card">
+        <div class="image-section">
+            <img src="Images/attrakt3.jpg">
+        </div>
+        <div class="article">
+            <h4><a href="news4.html" target="_blank">
+                Nasib FIFTY FIFTY Imbas Sengketa dengan ATTRAKT, Lagu Batal Diputarkan di Film 
+                Barbie hingga Tak Bisa Tampil di Luar Negeri</a></h4>
+               <p> Fifty Fifty makin meredup. Setelah rencana pembuatan video music mereka dibatalkan 
+                   lagu mereka untuk soundtrack film Barbie juga tak...
+               </p>      
+       </div>
+       <div class="blog-view">
+         <a href="news4.html" class="button" target="_blank"> Read More</a>
+       </div>
+       <div class="posted-date">
+        <p> 1 minggu lalu</p>
+    </div>
+    </div>
+
+</div>
+<div class="cards">
+<div class="card">
+    <div class="image-section">
+        <img src="Images/atrakt9.jpg">
+    </div>
+    <div class="article">
+        <h4><a href="news5.html" target="_blank">
+            FIFTY FIFTY Rilis Video Lirik OST Barbie di Tengah Polemik Agensi</a></h4>
+       <p> Fifty Fifty rilis lagu Barbie Dreams, OST film Barbie dan hasil kolaborasi dengan kaliii, di tengah polemik dengan agensi...</p>
+   </div>
+   <div class="blog-view">
+     <a href="news5.html" class="button" target="_blank"> Read More</a>
+   </div>
+   <div class="posted-date">
+    <p> 1 bulan lalu</p>
+</div>
+</div>
+
+
+
+</div>
+<div class="cards">
+<div class="card">
+    <div class="image-section">
+        <img src="Images/attrakt4.webp">
+    </div>
+    <div class="article">
+        <h4><a href="news7.html" target="_blank">
+            FIFTY FIFTY Bangkit Di Tengah Kontroversi: Kesuksesan Memuncaki Tanggal Lagu & Mengurai Perselisihan</a></h4>
+            <p>Boyband asal Korea Selatan, FIFTY FIFTY, seolah berada dalam situasi yang unik
+                 dan paradoks menurut data terbaru dari tangga lagu...</p>
+   </div>
+   <div class="blog-view">
+     <a href="news7.html" class="button" target="_blank"> Read More</a>
+   </div>
+   <div class="posted-date">
+    <p> 3 minggu lalu</p>
+</div>
+</div>
+
+</div>
+<div class="cards">
+<div class="card">
+    <div class="image-section">
+        <img src="Images/attrakt5.jpg">
+    </div>
+    <div class="article">
+        <h4><a href="news8.html" target="_blank">
+          Setelah Laporkan Dispatch Muncul, KNetz Kompak Berikan Reaksi ini Terhadap FIFTY FIFTY dan Ahn Sung II-Kpop Chart</a></h4>
+       <p>Berkat Dispatch muncul melaporkan bahwa Ahn Sung II memalsukan tanda tangan, Netizen menolak FIFTY FIFTY dan Ahn Sung II...</p>
+   </div>
+   <div class="blog-view">
+     <a href="news8.html" class="button" target="_blank"> Read More</a>
+   </div>
+   <div class="posted-date">
+    <p> 2 minggu lalu</p>
+</div>
+</div>
+
+</div>
+<div class="cards">
+<div class="card">
+    <div class="image-section">
+        <img src="Images/attrakt10.webp">
+    </div>
+    <div class="article">
+        <h4><a href="news9.html" target="_blank">
+            Kronologi Agensi FIFTY FIFTY Tuntut Penulis Lagu Cupid</a></h4>
+            <p> KOMCA menahan pembayaran lagu Cupid, FIFTY FIFTY dilaporkan dalam kondisi bahaya, berpotensi masuk blacklist industri hiburan...</p>
+   </div>
+   <div class="blog-view">
+     <a href="news9.html" class="button" target="_blank"> Read More</a>
+   </div>
+   <div class="posted-date">
+    <p> 1 bulan lalu</p>
+</div>
+</div>
+
+
+</div>
+<div class="cards">
+<div class="card">
+    <div class="image-section">
+        <img src="Images/attrakt8.jpg">
+    </div>
+    <div class="article">
+        <h4><a href="news10.html" target="_blank">
+            Krnologi Isu Fifty Fifty Dibajak Pihak Ketiga Usai Lagu Cupid Viral, Warner Music Korea Sampai Angkat Suara</a></h4>
+            <p> Liputan6.com, Seoul-Siapa sih warganet yang belum pernah dengar lagu "Cupid" dari Fifty Fifty? 
+                walau tidak pernah dengar secara...</p>
+   </div>
+   <div class="blog-view">
+     <a href="news10.html" class="button" target="_blank"> Read More</a>
+   </div>
+   <div class="posted-date">
+    <p> 1 bulan lalu</p>
+</div>
+</div>
+
+       
+ </article>
+
+    <footer>
+        <p>Copyrightⓒ2023 ATTRAKT Co., Ltd. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>

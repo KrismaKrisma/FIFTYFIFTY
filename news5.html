@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    
+        header{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: wheat;
+           
+           
+        }
+        .navbar{
+            overflow: hidden;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            border: 2px solid #b04f8b;
+    
+        }
+        .navbar a{
+            float: left;
+            font-size: 18px;
+            color: #b04f8b;
+            padding: 10px 30px;
+            text-decoration: none;
+            text-align: center; 
+            border-bottom: 3px solid transparent;
+            font-family: 'Abril Fatface', cursive;
+    
+        }
+    
+        .navbar a:hover{
+            color: wheat;
+            border-bottom: 3px solid wheat
+        }
+       
+        .dropdown{
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn{
+            font-size: 20px;
+            border: none;
+            outline: none;
+            color: #b04f8b;
+            padding: 15px 30px;
+            background-color: black;
+            font-size: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn{
+            background-color: palevioletred;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #b04f8b;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px palevioletred;
+            z-index: 1;
+    
+        }
+        .dropdown-content a{
+            float: none;
+            color: pink;
+            padding: 15px 18px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover{
+            background-color: palevioletred;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+    
+        #runningtext{
+            width: 100%;
+            height: 100%;
+            padding-top: 7px;
+            margin: 0px 0 0px 0;
+            background-color: black;
+            color: wheat;
+            position: relative;
+            font-size: 20px;
+            border: 2px solid #b04f8b;
+            font-family: 'Crimson Text', serif;
+        }
+
+        #runningtext2{
+            width: 100%;
+            height: 100%;
+            padding-top: 7px;
+            margin: 0px 0 0px 0;
+            background-color: black;
+            color: wheat;
+            position: relative;
+            font-size: 20px;
+            font-family: 'Unna', serif;
+        }
+        
+    
+        article{
+                background-color: #b04f8b;
+                padding: 80px;
+                text-align: center;
+                font-size: 15px;
+                color: black;
+                font-family: 'Unna', serif;
+               
+               
+                
+        }
+    
+        .isipostingall{
+            background-color: #b04f8b;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            padding: 3px;
+            
+        }
+
+        .isipostingall2{
+            background-color: #b04f8b;
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            padding: 3px;
+            
+        }
+    
+        .isipostingall h2{
+            text-align: center;
+            color: wheat;
+            font-size: 15px;
+    
+           
+        }
+    
+        .gambardepan{
+            width: 900px;
+            height: 500px;
+            float: none;
+            margin: 0px 5px 5px 15px;
+            text-align: center;
+            border: 5px solid black;
+            
+        }
+
+        .gambardepan2{
+            width: 900px;
+            height: 500px;
+            float: none;
+            margin: 0px 5px 5px 15px;
+            text-align: center;
+            border: 5px solid black;
+            
+        }
+    
+       
+    
+        footer{
+                background-color: black;
+                padding: 20px;
+                text-align: center;
+                color:white;
+                
+             }
+    
+    
+       </style>
+
+</head>
+<body>
+    <header>
+        <img src="Images/FIFTY30.png" width="25%">
+    </header>
+
+    <div class="navbar">
+    
+        <a href="index.html">HOME</a></li> 
+        <div class="dropdown">
+            <button class="dropbtn">ABOUT</button>
+            <div class="dropdown-content">
+                <a href="about.html">Biographies</a>
+                <a href="pictures.html">Pictures</a>
+            </div>
+        </div>
+        <a href="news.html">NEWS</a></li>
+        <a href="music.html">MUSIC</a></li>
+        <a href="store.html">STORE</a></li>  
+    </div>
+    <div id="runningtext">
+        <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+            FIFTY FIFTY Rilis Video Lirik OST Barbie di Tengah Polemik Agensi
+
+             </marquee>
+       </div>
+
+       <article> 
+        <H1>     </H1>
+
+    <div id="isi">
+        <div class="isipostingall">
+            <img src="Images/kri6.jpg" class="gambardepan">
+            <h2>CNN Indonesia</h2>
+            <h2> Sabtu, 08 Jul 2023 01:20 WIB</h2><br>
+            <h3>Jakarta, CNN Indonesia -- FIFTY FIFTY resmi merilis Barbie Dreams yang menjadi salah satu original soundtrack 
+                film Barbie pada Jumat (7/7). Barbie Dreams dirilis dalam bentuk video lirik di YouTube resmi FIFTY FIFTY.
+                Tak hanya itu, lagu hasil kolaborasi bersama Kaliii itu juga sudah dirilis di layanan streaming musik, seperti Spotify.<br><br>
+
+                Barbie Dreams merupakan hasil transformasi Together Again yang dipopulerkan Janet Jackson menjadi sebuah lagu 
+                electro-pop yang begitu bubbly mencerminkan energi film Barbie. "When I close my eyes, it's a fantasy / Perfect plastic
+                life from a magazine / Then when I wake up, it's reality / I can have it all / live my Barbie dreams," 
+                nyanyian mereka di bagian chorus.Kaliii meramaikan lagu itu lewat rap untuk salah satu verse Barbie Dreams.<br><br><br>
+
+                <div id="runningtext2">
+                    <marquee behavior="scroll" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();" direction="left">
+                        Kaliii meramaikan lagu itu lewat rap untuk salah satu verse Barbie Dreams. </marquee>
+                    </div><br><br>
+                
+                               <div id="isi">
+                                <div class="isipostingall2">
+                                    <img src="Images/kri8.webp" class="gambardepan2">
+                                    <h2>CNN Indonesia</h2>
+                                    <h2> Sabtu, 08 Jul 2023 01:20 WIB</h2><br>
+
+                "Ken gon' spend 'cause I'm a ten / Pink Corvette, let's paint the rims / I give looks and set the trends
+                 / We all look good, it's me and friends." Lagu tersebut dirilis di tengah perseteruan FIFTY FIFTY bersama agensinya, 
+                 ATTRAKT, yang menyeret produser musik Cupid SIAHN hingga Warner Music Korea. Video lirik itu juga dirilis dua hari 
+                 setelah ATTRAKT mengonfirmasi belum dapat melakukan pengambilan gambar untuk video musik Barbie Dreams. 
+                 Agensi mengatakan hal itu disebabkan kondisi member, Aran, masih dalam pemulihan.<br><br>
+                 "Itu benar saat ini kami belum bisa syuting video musik untuk OST Barbie," kata ATTRAKT seperti diberitakan 
+                 Hankook Ilbo pada Selasa (4/7). "Aran sempat sakit dan menjalani operasi, dia membutuhkan dua bulan pemulihan,
+                 sehingga kami tidak bisa menjadwalkan syuting MV. Kemudian situasi seperti saat ini terjadi, sehingga jadi sulit
+                (untuk syuting)."
+
+            
+    
+                </h3> 
+        </div>
+    </div>
+
+
+    </article>
+
+    <footer>
+        <p>Copyrightⓒ2023 ATTRAKT Co., Ltd. All rights reserved.</p>
+    </footer>
+    
+
+
+
+    
+</body>
+</html>
